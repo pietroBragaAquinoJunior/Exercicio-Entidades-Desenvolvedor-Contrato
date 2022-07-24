@@ -61,8 +61,8 @@ public class Main {
 		Date dataGanho = sdf2.parse(dataDigitadaGanhos);
 		Calendar calendario = Calendar.getInstance();
 		calendario.setTime(dataGanho);
-		int mesGanho = calendario.get(calendario.MONTH + 1);
-		int anoGanho = calendario.get(calendario.YEAR);
+		int mesGanho = calendario.get(Calendar.MONTH + 1);
+		int anoGanho = calendario.get(Calendar.YEAR);
 		
 		System.out.println("Nome: "+desenvolvedor.getNome());
 		System.out.println("Departamento: "+ desenvolvedor.getDepartamento().getName());
